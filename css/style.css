@@ -30,7 +30,10 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant-caps: small-caps;
     color: #15301f;
-    text-decoration: dotted 3px #15301f;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
 }
 
 p {
@@ -47,8 +50,13 @@ ol li {
     line-height: 2;
 }
 
+img[alt="pillango.png"] {
+    right: 1rem;
+    bottom: 1rem;
+}
+
 @media screen and (max-width: 700px) {
-    header {
-        background-image: none;
+    img[alt="pillango.png"] {
+        display: none;
     }
 }
