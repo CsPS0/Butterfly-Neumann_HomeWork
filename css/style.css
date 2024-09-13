@@ -11,6 +11,7 @@ header {
 }
 
 main {
+    position: relative;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto 20px auto;
@@ -50,9 +51,11 @@ ol li {
     line-height: 2;
 }
 
-img[alt="pillango.png"] {
-    right: 1rem;
-    bottom: 1rem;
+body section:last-child img {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 700px) {
